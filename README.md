@@ -51,6 +51,9 @@ A professional, interactive 3D virtual classroom built with Three.js, featuring 
 
 ## 🚀 Getting Started
 
+### 📸 Screenshot
+<img width="1919" height="961" alt="image" src="https://github.com/user-attachments/assets/c11426d7-e1e1-4f7f-bba9-219402a5a046" />
+
 ### Prerequisites
 - Modern web browser (Chrome, Firefox, Edge, Safari)
 - Local web server (for loading ES modules)
