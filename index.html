@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Classroom 3D - BST</title>
+    <meta
+      name="description"
+      content="Interactive 3D Virtual Classroom with PDF Viewer - Built with Three.js"
+    />
+    <link rel="icon" type="image/png" href="assets/lecture.png" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div id="loading-screen">
+      <div class="loading-content">
+        <h1>Virtual Classroom</h1>
+        <div class="loading-spinner"></div>
+        <p>Loading 3D Environment...</p>
+      </div>
+    </div>
+
+    <!-- Main 3D Canvas -->
+    <canvas id="canvas3d"></canvas>
+
+    <!-- UI Overlay Panel -->
+    <div id="ui-overlay">
+      <div class="control-panel">
+        <h2>🎓 BST Virtual Classroom</h2>
+
+        <div class="control-section">
+          <h3>📄 PDF Viewer</h3>
+          <div class="pdf-controls">
+            <input type="file" id="pdf-upload" accept="application/pdf" />
+            <label for="pdf-upload" class="btn btn-primary">
+              <span>📁</span> Upload PDF
+            </label>
+            <div id="pdf-info" class="pdf-info hidden">
+              <span id="pdf-filename">No file loaded</span>
+              <div class="page-controls">
+                <button id="prev-page" class="btn btn-small" disabled>
+                  <span>←</span> Previous
+                </button>
+                <span id="page-info">Page 0 / 0</span>
+                <button id="next-page" class="btn btn-small" disabled>
+                  Next <span>→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="control-section">
+          <h3>🎥 Camera</h3>
+          <div class="camera-controls">
+            <button id="reset-camera" class="btn btn-secondary">
+              <span>🔄</span> Reset View
+            </button>
+            <button id="focus-board" class="btn btn-secondary">
+              <span>🎯</span> Focus Board
+            </button>
+            <button id="focus-teacher" class="btn btn-secondary">
+              <span>👨‍🏫</span> Focus Teacher
+            </button>
+            <label class="toggle-control">
+              <input type="checkbox" id="auto-rotate" />
+              <span>Auto-Rotate</span>
+            </label>
+            <label class="slider-control">
+              <span>Camera Speed</span>
+              <input
+                type="range"
+                id="camera-speed"
+                min="0.5"
+                max="2"
+                step="0.1"
+                value="1"
+              />
+              <span id="camera-speed-value">1.0x</span>
+            </label>
+            <label class="slider-control">
+              <span>Zoom Speed</span>
+              <input
+                type="range"
+                id="zoom-speed"
+                min="0.5"
+                max="2"
+                step="0.1"
+                value="1"
+              />
+              <span id="zoom-speed-value">1.0x</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="control-section">
+          <h3>⚙️ Settings</h3>
+          <div class="settings-controls">
+            <label class="toggle-control">
+              <input type="checkbox" id="show-shadows" checked />
+              <span>Shadows</span>
+            </label>
+            <label class="toggle-control">
+              <input type="checkbox" id="show-helpers" />
+              <span>Show Helpers</span>
+            </label>
+            <label class="toggle-control">
+              <input type="checkbox" id="show-particles" checked />
+              <span>Particle Effects</span>
+            </label>
+            <label class="slider-control">
+              <span>PDF Brightness</span>
+              <input
+                type="range"
+                id="pdf-brightness"
+                min="0.3"
+                max="1.5"
+                step="0.1"
+                value="0.7"
+              />
+              <span id="pdf-brightness-value">0.7</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="fps-counter">
+          <span>FPS: <span id="fps-value">60</span></span>
+        </div>
+      </div>
+
+      <div id="instructions-panel" class="instructions-panel">
+        <button id="toggle-instructions" class="btn-icon">❓</button>
+        <div id="instructions-content" class="instructions-content hidden">
+          <h3>📖 Controls</h3>
+          <ul>
+            <li><strong>🖱️ Left Click + Drag:</strong> Rotate camera</li>
+            <li><strong>🖱️ Right Click + Drag:</strong> Pan camera</li>
+            <li><strong>⚙️ Scroll Wheel:</strong> Zoom in/out</li>
+            <li><strong>⌨️ Arrow Keys:</strong> Navigate PDF pages</li>
+            <li><strong>⌨️ Space:</strong> Reset camera view</li>
+          </ul>
+          <h3>✨ Features</h3>
+          <ul>
+            <li>Upload and view PDF documents on the classroom board</li>
+            <li>Navigate through pages with controls or arrow keys</li>
+            <li>Interactive 3D classroom environment</li>
+            <li>Professional lighting and shadows</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="stats-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+      pdfjsLib.GlobalWorkerOptions.workerSrc =
+        "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+    </script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
