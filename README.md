@@ -248,27 +248,11 @@ This project is created for educational purposes as part of the BST (Bilgisayar 
 
 ## 👨‍💻 Author
 
-**BST 4th Year Student**
+**Abdulrezak Halit**
 - Course: Bilgisayar Grafikleri
 - Project: Virtual Classroom 3D
 - Built with: Three.js & PDF.js
 
-## 🙏 Acknowledgments
-
-- [Three.js Team](https://threejs.org/) - Amazing 3D library
-- [Mozilla PDF.js](https://mozilla.github.io/pdf.js/) - PDF rendering
-- [Three.js Examples](https://threejs.org/examples/) - Inspiration and learning
-
-## 📞 Support
-
-For questions or issues:
-1. Check the troubleshooting section
-2. Review browser console for errors
-3. Verify web server is running
-4. Ensure all files are properly loaded
-
 ---
-
-**Made with ❤️ using Three.js**
 
 *Virtual Classroom 3D - Bringing Education to the Third Dimension*
