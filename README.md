@@ -117,35 +117,6 @@ A professional, interactive 3D virtual classroom built with Three.js, featuring 
 - **Vanilla JavaScript** (ES6+ modules)
 - **HTML5 & CSS3** - UI and styling
 
-## 🎨 Customization
-
-### Changing Classroom Dimensions
-Edit `js/Classroom.js`:
-```javascript
-this.width = 20;  // Classroom width
-this.depth = 15;  // Classroom depth
-this.height = 4;  // Classroom height
-```
-
-### Modifying Desk Layout
-Edit `js/Furniture.js`:
-```javascript
-this.rows = 5;        // Number of rows
-this.columns = 4;     // Number of columns
-this.deskSpacing = 2.2;
-this.rowSpacing = 2.0;
-```
-
-### Adjusting Lighting
-Edit `js/Lighting.js` - modify intensities, colors, or add more lights
-
-### Changing Colors
-Edit student/teacher colors in `js/Characters.js`:
-```javascript
-this.skinTones = ['#FFE0BD', '#F1C27D', ...];
-this.shirtColors = ['#FF6B6B', '#4ECDC4', ...];
-```
-
 ## 📝 Development Notes
 
 ### Code Style
