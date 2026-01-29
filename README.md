@@ -108,28 +108,6 @@ A professional, interactive 3D virtual classroom built with Three.js, featuring 
 - **Auto-Rotate**: Enable automatic camera rotation
 - **Show Helpers**: Display light helpers (debugging)
 
-## 🏗️ Project Structure
-
-```
-classrom-3d-Game/
-├── index.html              # Main HTML file
-├── css/
-│   └── styles.css         # Application styles
-├── js/
-│   ├── main.js            # Application entry point
-│   ├── Classroom.js       # Classroom environment
-│   ├── Furniture.js       # Desks, chairs, blackboard
-│   ├── Characters.js      # Students and teacher
-│   ├── PDFViewer.js       # PDF integration
-│   ├── Controls.js        # Camera controls
-│   ├── Lighting.js        # Lighting system
-│   └── Utils.js           # Helper functions
-├── assets/                # Assets directory (optional)
-│   ├── textures/
-│   └── fonts/
-└── README.md             # This file
-```
-
 ## 🛠️ Technology Stack
 
 - **[Three.js](https://threejs.org/)** (r160) - 3D rendering engine
@@ -168,52 +146,6 @@ this.skinTones = ['#FFE0BD', '#F1C27D', ...];
 this.shirtColors = ['#FF6B6B', '#4ECDC4', ...];
 ```
 
-## 🔮 Future Enhancements
-
-### Planned Features
-- [ ] **Realistic 3D Models**: Replace geometric shapes with GLTF models
-- [ ] **Interactive Whiteboard**: Draw and annotate on the board
-- [ ] **Multiplayer Support**: Real-time collaboration
-- [ ] **VR Mode**: WebXR integration for VR headsets
-- [ ] **Audio**: Ambient classroom sounds and effects
-- [ ] **Day/Night Cycle**: Dynamic lighting based on time
-- [ ] **Screen Sharing**: Display live presentations
-- [ ] **Quiz Mode**: Interactive questions and answers
-- [ ] **Physics Engine**: Realistic object interactions
-- [ ] **Weather Effects**: Rain/snow visible through windows
-
-### Advanced Ideas
-- **AI-Powered Teacher**: Animated teacher with speech
-- **Student Avatars**: Customizable student appearances
-- **Classroom Builder**: Drag-and-drop furniture arrangement
-- **Analytics Dashboard**: Track presentation metrics
-- **Mobile Support**: Touch controls for tablets/phones
-- **Export/Share**: Save classroom configurations
-
-## 🐛 Troubleshooting
-
-### PDF Upload Not Working
-- Ensure you're running a local web server (required for ES modules)
-- Check browser console for errors
-- Verify PDF file is valid and not corrupted
-
-### Performance Issues
-- Disable shadows in settings
-- Reduce browser window size
-- Close other browser tabs
-- Update graphics drivers
-- Use a modern browser
-
-### Textures Not Loading
-- Clear browser cache
-- Ensure JavaScript is enabled
-- Check browser console for errors
-
-### Camera Controls Not Responding
-- Click on the 3D canvas to focus
-- Ensure browser window is active
-- Try resetting camera view
-
 ## 📝 Development Notes
 
 ### Code Style
@@ -228,12 +160,6 @@ this.shirtColors = ['#FF6B6B', '#4ECDC4', ...];
 - Efficient material reuse
 - Shadow map optimization
 - Proper disposal of resources
-
-### Browser Compatibility
-- ✅ Chrome 90+
-- ✅ Firefox 88+
-- ✅ Edge 90+
-- ✅ Safari 14+
 
 ## 🤝 Contributing
 
