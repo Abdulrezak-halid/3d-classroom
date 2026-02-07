@@ -6,7 +6,7 @@ A professional, interactive 3D virtual classroom built with Three.js, featuring 
 ![PDF.js](https://img.shields.io/badge/PDF.js-3.11-red?style=flat-square)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=flat-square&logo=javascript)
 
-## ✨ Features
+## Features
 
 ### 🏫 Complete 3D Classroom Environment
 - Fully modeled classroom with walls, floor, ceiling, and windows
@@ -49,7 +49,7 @@ A professional, interactive 3D virtual classroom built with Three.js, featuring 
 - Responsive design for different screen sizes
 - Smooth 60 FPS on modern hardware
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 📸 Screenshot
 <img width="1919" height="961" alt="image" src="https://github.com/user-attachments/assets/c11426d7-e1e1-4f7f-bba9-219402a5a046" />
@@ -87,7 +87,7 @@ A professional, interactive 3D virtual classroom built with Three.js, featuring 
    http://localhost:8000
    ```
 
-## 📖 Usage
+## Usage
 
 ### Basic Navigation
 1. **Rotate Camera**: Left-click and drag
@@ -108,7 +108,7 @@ A professional, interactive 3D virtual classroom built with Three.js, featuring 
 - **Auto-Rotate**: Enable automatic camera rotation
 - **Show Helpers**: Display light helpers (debugging)
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **[Three.js](https://threejs.org/)** (r160) - 3D rendering engine
 - **[PDF.js](https://mozilla.github.io/pdf.js/)** (3.11) - PDF rendering
@@ -117,7 +117,7 @@ A professional, interactive 3D virtual classroom built with Three.js, featuring 
 - **Vanilla JavaScript** (ES6+ modules)
 - **HTML5 & CSS3** - UI and styling
 
-## 📝 Development Notes
+## Development Notes
 
 ### Code Style
 - ES6+ modules for clean organization
@@ -132,7 +132,7 @@ A professional, interactive 3D virtual classroom built with Three.js, featuring 
 - Shadow map optimization
 - Proper disposal of resources
 
-## 🤝 Contributing
+## Contributing
 
 This is a student project, but suggestions and improvements are welcome!
 
@@ -142,11 +142,11 @@ This is a student project, but suggestions and improvements are welcome!
 4. Push to the branch
 5. Create a pull request
 
-## 📄 License
+## License
 
 This project is created for educational purposes as part of the BST (Bilgisayar Grafikleri) course.
 
-## 👨‍💻 Author
+## Author
 
 **Abdulrezak Halit**
 - Course: Bilgisayar Grafikleri
